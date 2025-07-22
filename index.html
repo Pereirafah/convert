@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Convert</title>
+  </head>
+  <body>
+    <img src="./img/logo.svg" alt="Convert logo" />
+
+    <main>
+      <form>
+        <label for="amount">valor</label>
+        <input type="text" name="amount" id="amount" placeholder="0" required />
+
+        <label for="currency">moeda</label>
+        <select name="currency" id="currency" required>
+          <option value="" disabled selected hidden>Selecione a moeda</option>
+          <option value="USD">Dólar americano (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="BTC">Bitcoin (BTC)</option>
+          <option value="GBP">Libra esterlina (GBP)</option>
+          <option value="BRL">Real (BRL)</option>
+          <option value="CAD">Dólar canadense (CAD)</option>
+          <option value="ARS">Peso argentino (ARS)</option>
+          <option value="MXN">Peso mexicano (MXN)</option>
+          <option value="CNY">Yuan renminbi (CNY)</option>
+          <option value="JPY">Iene (JPY)</option>
+          <option value="RUB">Rublo (RUB)</option>
+          <option value="INR">Rupia indiana (INR)</option>
+          <option value="AUD">Dólar australiano (AUD)</option>
+          <option value="ZAR">Rand (ZAR)</option>
+          <option value="CHF">Franco suíço (CHF)</option>
+          <option value="SAR">Rial saudita (SAR)</option>
+          <option value="SEK">Coroa sueca (SEK)</option>
+          <option value="NOK">Coroa norueguesa (NOK)</option>
+          <option value="DKK">Coroa dinamarquesa (DKK)</option>
+          <option value="KRW">Won sul-coreano (KRW)</option>
+          <option value="TRY">Lira turca (TRY)</option>
+          <option value="NGN">Naira (NGN)</option>
+        </select>
+
+
+
+  <button type="submit">Converter em reais</button>
+      </form>
+
+      <footer>
+        <span id="description">US$ 1 = R$ 5,58</span>
+        <h1 id="result">558,00 Reais</h1>
+      </footer>
+    </main>
+  <script src="scripts.js"></script>
+  </body>
+</html>
