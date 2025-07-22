@@ -153,6 +153,14 @@ footer span {
   line-height: 1.25rem;
 }
 
+a {
+  color: #7d8dec;
+}
+
+.container.footer {
+margin-top: 50px;
+}
+
 footer h1 {
   color: #f1f2f6;
   font-weight: 700;
